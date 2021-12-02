@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="js/index.js"></script> 
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__logo">
+			MyPhoneBook
+		</h1>
+	</header>
+	<div class="unauthorized-screen">
+		<div class="row">
+			<div class="row__col">
+				<div class="form register-form">
+					<div class="form__header">Register</div>
+					<div class="form__body">
+						<div class="form__control">
+							<label for="login_user_login">Login</label>
+							<input type="text" class="input" id="login_user_login">
+						</div>
+						<div class="form__control">
+							<label for="login_user_password">Password</label>
+							<input type="text" class="input" id="login_user_password">
+						</div>
+						<div class="form__control">
+							<label for="login_user_born">Birthday</label>
+							<input type="text" class="input" id="login_user_born">
+						</div>
+						<div class="form__control">
+							<button class="btn_register btn_success">register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row__col">
+				<div class="form login_form">
+					<div class="form__header">LogIn</div>
+					<div class="form__body">
+						<div class="form__control">
+							<label for="login_user_login">Login</label>
+							<input type="text" class="input" id="login_user_login">
+						</div>
+						<div class="form__control">
+							<label for="login_user_password">Password</label>
+							<input type="text" class="input" id="login_user_password">
+						</div>
+						<div class="form__control">
+							<button class="btn_login btn_success">Log In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="autorized-screen">
+		<div class="autorized-screen__aside-part">
+			<h2 class="name-list__header form-header">Contacts list</h2>
+		    <div class='name-list'>
+		    </div>
+		</div>
+		<div class="chosen-contact">
+			<div class="chosen-contact__information">
+				
+			</div>
+			<div class="chosen-contact__add-form">
+				<h2 class="chosen-contact__add-form_header form-header">Add contact</h2>
+				<div class="chosen-contact__add-form_title">Name</div>
+				<input type="text" class="chosen-contact__add-form_name">
+				<label for="type"></label>
+				<select name="type" id="type">
+					<option value="email">email</option>
+					<option value="phone">phone</option>
+				</select>
+				<div class="chosen-contact__add-form_title">Email/phone</div>
+				<input type="text" class="chosen-contact__add-form_value">
+				<button class="btn_add">add</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
